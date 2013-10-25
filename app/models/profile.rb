@@ -4,5 +4,5 @@ belongs_to :user
 
 has_attached_file :pic
         
-
+has_one :create_resume
 end

@@ -13,11 +13,11 @@ class ProfilesController < ApplicationController
 
 
 def index
-   if @current_user.id == @create_resume.user_id
-    redirect_to :controller => "create_resumes", :action => "edit" 
-  else
-    redirect_to :controller => "create_resumes", :action => "create" 
- end
+ #   if @current_user.id == @create_resume.user_id
+ #    redirect_to :controller => "create_resumes", :action => "edit" 
+ #  else
+ #    redirect_to :controller => "create_resumes", :action => "create" 
+ # end
 end
   
 
