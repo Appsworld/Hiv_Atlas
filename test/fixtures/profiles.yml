@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  username: MyString
+  email: MyString
+  Default_send_interval: MyString
+  picture: MyString
+  language: MyString
+  email_setting: MyString
+  contact_setting: MyString
+  locale_setting: MyString
+
+two:
+  user_id: 1
+  username: MyString
+  email: MyString
+  Default_send_interval: MyString
+  picture: MyString
+  language: MyString
+  email_setting: MyString
+  contact_setting: MyString
+  locale_setting: MyString

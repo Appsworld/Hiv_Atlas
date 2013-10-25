@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<!--
+<p>
+  <b>User:</b>
+  <%= @create_resume.user_id %>
+</p>
+-->
+
+<p>
+  <b>Title:</b>
+  <%= @create_resume.title %>
+</p>
+
+<p>
+  <b>Profession:</b>
+  <%= @create_resume.profession %>
+</p>
+
+<p>
+  <b>Job status:</b>
+  <%= @create_resume.job_status %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @create_resume.language %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @create_resume.body %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @create_resume.location %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @create_resume.country %>
+</p>
+
+<p>
+  <b>Make post private:</b>
+  <%= @create_resume.make_post_private %>
+</p>
+
+
+<%= link_to 'Edit', edit_create_resume_path(@create_resume) %> |
+<%= link_to 'Back', create_resumes_path %>

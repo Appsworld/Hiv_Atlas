@@ -1,0 +1,56 @@
+<%= form_for(@create_resume) do |f| %>
+  <% if @create_resume.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@create_resume.errors.count, "error") %> prohibited this create_resume from being saved:</h2>
+
+      <ul>
+      <% @create_resume.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!--
+  <div class="field">
+    <#%= f.label :user_id %><br />
+    <%#= f.number_field :user_id %>
+  </div>
+  -->
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :profession %><br />
+    <%= f.text_field :profession %>
+  </div>
+  <div class="field">
+    <%= f.label :job_status %><br />
+    <%= f.text_field :job_status %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :make_post_private %><br />
+    <%= f.check_box :make_post_private %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,38 @@
+<%= form_for @profile, :html => { :multipart => true } do |f| %>
+                                           
+  
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>  
+  <div class="field">
+    <%= f.label :Default_send_interval %><br />
+    <%= f.text_field :Default_send_interval %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :email_setting %><br />
+    <%= f.text_field :email_setting %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_setting %><br />
+    <%= f.text_field :contact_setting %>
+  </div>
+  <div class="field">
+    <%= f.label :locale_setting %><br />
+    <%= f.text_field :locale_setting %>
+  </div>
+  <div class="actions">
+
+  <p>
+   <b> Picture </b><br/>
+   <%= f.file_field :pic %>
+  </p>
+  
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @profile.username %>
+</p>
+
+
+
+<p>
+  <b>Default send interval:</b>
+  <%= @profile.Default_send_interval %>
+</p>
+
+
+<p>
+  <b>Language:</b>
+  <%= @profile.language %>
+</p>
+
+<p>
+  <b>Email setting:</b>
+  <%= @profile.email_setting %>
+</p>
+
+<p>
+  <b>Contact setting:</b>
+  <%= @profile.contact_setting %>
+</p>
+
+<p>
+  <b>Locale setting:</b>
+  <%= @profile.locale_setting %>
+</p>
+
+<%= image_tag @profile.pic.url %>
+ <br/>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

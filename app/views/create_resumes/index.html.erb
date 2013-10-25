@@ -1,0 +1,40 @@
+<h1>Listing create_resumes</h1>
+
+<table>
+  <tr>
+   <!-- <th>User</th>  -->
+   
+    <th>Title</th>
+    <th>Profession</th>
+    <th>Job status</th>
+    <th>Language</th>
+    <th>Body</th>
+    <th>Location</th>
+    <th>Country</th>
+    <th>Make post private</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @create_resumes.each do |create_resume| %>
+  <tr>
+    <!-- <td><%= create_resume.user_id %></td> -->
+    <td><%= create_resume.title %></td>
+    <td><%= create_resume.profession %></td>
+    <td><%= create_resume.job_status %></td>
+    <td><%= create_resume.language %></td>
+    <td><%= create_resume.body %></td>
+    <td><%= create_resume.location %></td>
+    <td><%= create_resume.country %></td>
+    <td><%= create_resume.make_post_private %></td>
+    <td><%= link_to 'Show', create_resume %></td>
+    <td><%= link_to 'Edit', edit_create_resume_path(create_resume) %></td>
+    <td><%= link_to 'Destroy', create_resume, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Create resume', new_create_resume_path %>

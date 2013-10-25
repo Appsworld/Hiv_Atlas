@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  title: MyString
+  profession: MyString
+  job_status: MyString
+  language: MyString
+  body: MyText
+  location: MyString
+  country: MyString
+  make_post_private: false
+
+two:
+  user_id: 1
+  title: MyString
+  profession: MyString
+  job_status: MyString
+  language: MyString
+  body: MyText
+  location: MyString
+  country: MyString
+  make_post_private: false
