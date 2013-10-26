@@ -1,0 +1,91 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <b>Job title:</b>
+  <%= @create_job_post.job_title %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @create_job_post.email %>
+</p>
+
+<p>
+  <b>Enabled:</b>
+  <%= @create_job_post.enabled %>
+</p>
+
+<p>
+  <b>True:</b>
+  <%= @create_job_post.true %>
+</p>
+
+<p>
+  <b>Deadline date:</b>
+  <%= @create_job_post.deadline_date %>
+</p>
+
+<p>
+  <b>Deadline time:</b>
+  <%= @create_job_post.deadline_time %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @create_job_post.description %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @create_job_post.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @create_job_post.state %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @create_job_post.country %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @create_job_post.name %>
+</p>
+
+<p>
+  <b>Website url:</b>
+  <%= @create_job_post.website_url %>
+</p>
+
+<p>
+  <b>Contact person:</b>
+  <%= @create_job_post.contact_person %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @create_job_post.location %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @create_job_post.country %>
+</p>
+
+<p>
+  <b>Make post private:</b>
+  <%= @create_job_post.Make_post_private %>
+</p>
+
+<a href="<%= @create_job_post.attach.url %> ">
+             <b> File attached </b></a>
+ <br/>
+
+
+<%= link_to 'Edit', edit_create_job_post_path(@create_job_post) %> |
+<%= link_to 'Back', create_job_posts_path %>

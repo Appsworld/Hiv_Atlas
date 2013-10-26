@@ -10,6 +10,6 @@ class AddAttachPaperclip < ActiveRecord::Migration
     remove_column :create_resumes, :attach_file_name
     remove_column :create_resumes, :attach_content_type
     remove_column :create_resumes, :attach_file_size
-    remove_column :create_resumes, :attach_updated_at
+    remove_column :create_resumes, :attach_updated_at  
   end
 end

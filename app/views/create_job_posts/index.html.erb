@@ -1,0 +1,56 @@
+<h1>Listing create_job_posts</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Job title</th>
+    <th>Email</th>
+    <th>Enabled</th>
+    <th>True</th>
+    <th>Deadline date</th>
+    <th>Deadline time</th>
+    <th>Description</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Name</th>
+    <th>Website url</th>
+    <th>Contact person</th>
+    <th>Location</th>
+    <th>Country</th>
+    <th>Make post private</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @create_job_posts.each do |create_job_post| %>
+  <tr>
+    <td><%= create_job_post.user_id %></td>
+    <td><%= create_job_post.job_title %></td>
+    <td><%= create_job_post.email %></td>
+    <td><%= create_job_post.enabled %></td>
+    <td><%= create_job_post.true %></td>
+    <td><%= create_job_post.deadline_date %></td>
+    <td><%= create_job_post.deadline_time %></td>
+    <td><%= create_job_post.description %></td>
+    <td><%= create_job_post.city %></td>
+    <td><%= create_job_post.state %></td>
+    <td><%= create_job_post.country %></td>
+    <td><%= create_job_post.name %></td>
+    <td><%= create_job_post.website_url %></td>
+    <td><%= create_job_post.contact_person %></td>
+    <td><%= create_job_post.location %></td>
+    <td><%= create_job_post.country %></td>
+    <td><%= create_job_post.Make_post_private %></td>
+    <td><%= link_to 'Home', profiles_path %></td>
+    <td><%= link_to 'Show', create_job_post %></td>
+    <td><%= link_to 'Edit', edit_create_job_post_path(create_job_post) %></td>
+    <td><%= link_to 'Destroy', create_job_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Create job post', new_create_job_post_path %>

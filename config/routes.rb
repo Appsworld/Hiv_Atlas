@@ -1,5 +1,8 @@
 HivAtlas::Application.routes.draw do
    
+  resources :create_job_posts
+
+
   resources :create_events
 
 

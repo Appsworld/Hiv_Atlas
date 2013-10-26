@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  job_title: MyString
+  email: MyString
+  enabled: false
+  'true': false
+  deadline_date: 2013-10-26
+  deadline_time: 2013-10-26 11:48:42
+  description: MyText
+  city: MyString
+  state: MyString
+  country: MyString
+  name: MyString
+  website_url: MyString
+  contact_person: MyString
+  location: MyString
+  country: MyString
+  Make_post_private: false
+
+two:
+  user_id: 1
+  job_title: MyString
+  email: MyString
+  enabled: false
+  'true': false
+  deadline_date: 2013-10-26
+  deadline_time: 2013-10-26 11:48:42
+  description: MyText
+  city: MyString
+  state: MyString
+  country: MyString
+  name: MyString
+  website_url: MyString
+  contact_person: MyString
+  location: MyString
+  country: MyString
+  Make_post_private: false

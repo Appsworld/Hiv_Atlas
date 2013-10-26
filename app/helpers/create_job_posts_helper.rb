@@ -1,0 +1,2 @@
+module CreateJobPostsHelper
+end

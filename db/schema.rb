@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131026054406) do
+ActiveRecord::Schema.define(:version => 20131026064419) do
 
   create_table "create_events", :force => true do |t|
     t.integer  "user_id"
@@ -24,6 +24,31 @@ ActiveRecord::Schema.define(:version => 20131026054406) do
     t.boolean  "Make_event_private"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "create_job_posts", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "job_title"
+    t.string   "email"
+    t.boolean  "enabled"
+    t.boolean  "true"
+    t.date     "deadline_date"
+    t.time     "deadline_time"
+    t.text     "description"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "name"
+    t.string   "website_url"
+    t.string   "contact_person"
+    t.string   "location"
+    t.boolean  "Make_post_private"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.string   "attach_file_name"
+    t.string   "attach_content_type"
+    t.integer  "attach_file_size"
+    t.datetime "attach_updated_at"
   end
 
   create_table "create_resumes", :force => true do |t|
