@@ -28,6 +28,7 @@
     <td><%= create_resume.location %></td>
     <td><%= create_resume.country %></td>
     <td><%= create_resume.make_post_private %></td>
+    <td><%= link_to 'Home', profiles_path %></td>
     <td><%= link_to 'Show', create_resume %></td>
     <td><%= link_to 'Edit', edit_create_resume_path(create_resume) %></td>
     <td><%= link_to 'Destroy', create_resume, method: :delete, data: { confirm: 'Are you sure?' } %></td>

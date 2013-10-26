@@ -1,9 +1,7 @@
 <h1>  Welcome To Your Profile </h1>
 
 <%= link_to "My profile", profile_path(current_user.id)%> ||
-<% if @current_user.id == @create_resume.user_id %>
 <%= link_to "Create Resume",new_create_resume_path %> ||
-<% end %>
 <%= link_to "Post Event",new_user_registration_path %> ||
 <%= link_to "Post Job",new_user_registration_path %> ||
 <%= link_to "Post Classified Ad",new_user_registration_path %>  <br/> <br/>

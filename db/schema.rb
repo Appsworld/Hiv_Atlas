@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131025120337) do
+ActiveRecord::Schema.define(:version => 20131026043649) do
 
   create_table "create_resumes", :force => true do |t|
     t.integer  "user_id"
@@ -23,8 +23,12 @@ ActiveRecord::Schema.define(:version => 20131025120337) do
     t.string   "location"
     t.string   "country"
     t.boolean  "make_post_private"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.string   "attach_file_name"
+    t.string   "attach_content_type"
+    t.integer  "attach_file_size"
+    t.datetime "attach_updated_at"
   end
 
   create_table "profiles", :force => true do |t|

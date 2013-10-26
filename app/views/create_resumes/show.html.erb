@@ -46,6 +46,9 @@
   <b>Make post private:</b>
   <%= @create_resume.make_post_private %>
 </p>
+<a href="<%= @create_resume.attach.url %> ">
+            <b> File attached </b> </a>
+ <br/>
 
 
 <%= link_to 'Edit', edit_create_resume_path(@create_resume) %> |

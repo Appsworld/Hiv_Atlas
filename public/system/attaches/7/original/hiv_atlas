@@ -1,0 +1,23 @@
+def index
+    @profiles = Profile.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @profiles }
+    end
+  end
+
+def new
+    @profile = Profile.new
+
+      
+      msg = current_user.id
+      flash[:notice] = msg
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @profile }
+    end
+  end
+
+
