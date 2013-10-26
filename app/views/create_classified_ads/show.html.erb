@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <b>Add title:</b>
+  <%= @create_classified_ad.add_title %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @create_classified_ad.category %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @create_classified_ad.state %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @create_classified_ad.country %>
+</p>
+
+<p>
+  <b>Add text:</b>
+  <%= @create_classified_ad.add_text %>
+</p>
+
+<p>
+  <b>Make this post private:</b>
+  <%= @create_classified_ad.Make_this_post_private %>
+</p>
+
+<%= image_tag @create_classified_ad.pic.url %>
+  <br/>
+
+
+<%= link_to 'Edit', edit_create_classified_ad_path(@create_classified_ad) %> |
+<%= link_to 'Back', create_classified_ads_path %>

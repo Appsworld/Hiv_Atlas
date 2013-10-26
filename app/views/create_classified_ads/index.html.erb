@@ -1,0 +1,36 @@
+<h1>Listing create_classified_ads</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Add title</th>
+    <th>Category</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Add text</th>
+    <th>Make this post private</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @create_classified_ads.each do |create_classified_ad| %>
+  <tr>
+    <td><%= create_classified_ad.user_id %></td>
+    <td><%= create_classified_ad.add_title %></td>
+    <td><%= create_classified_ad.category %></td>
+    <td><%= create_classified_ad.state %></td>
+    <td><%= create_classified_ad.country %></td>
+    <td><%= create_classified_ad.add_text %></td>
+    <td><%= create_classified_ad.Make_this_post_private %></td>
+    <td><%= link_to 'Home', profiles_path %></td>
+    <td><%= link_to 'Show', create_classified_ad %></td>
+    <td><%= link_to 'Edit', edit_create_classified_ad_path(create_classified_ad) %></td>
+    <td><%= link_to 'Destroy', create_classified_ad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Create classified ad', new_create_classified_ad_path %>

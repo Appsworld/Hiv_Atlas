@@ -11,7 +11,40 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131026064419) do
+ActiveRecord::Schema.define(:version => 20131026132921) do
+
+  create_table "blogs", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.text     "content"
+    t.boolean  "like"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.integer  "blog_id"
+    t.integer  "user_id"
+    t.string   "Leave_a_comment"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "create_classified_ads", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "add_title"
+    t.string   "category"
+    t.string   "state"
+    t.string   "country"
+    t.text     "add_text"
+    t.boolean  "Make_this_post_private"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
+  end
 
   create_table "create_events", :force => true do |t|
     t.integer  "user_id"

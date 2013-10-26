@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <b>Title:</b>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @blog.content %>
+</p>
+
+<p>
+  <b>Like:</b>
+  <%= @blog.like %>
+
+</p>
+<% @blog.comments.each do |c| %>
+	 <b><%= c.user.email %></b> commented <b> <%= c.Leave_a_comment %></b>
+<% end %> 
+
+
+<%= link_to "Add comment", new_blog_comment_path(@blog) %>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

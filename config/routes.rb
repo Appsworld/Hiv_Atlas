@@ -1,5 +1,19 @@
 HivAtlas::Application.routes.draw do
    
+  resources :comments
+
+
+  resources :blogs
+
+
+  resources :blogs  do
+   resources :comments
+ end
+
+
+  resources :create_classified_ads
+
+
   resources :create_job_posts
 
 
