@@ -1,0 +1,38 @@
+<h1>Listing create_events</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Title</th>
+    <th>From date</th>
+    <th>To date</th>
+    <th>Body</th>
+    <th>Location</th>
+    <th>Country</th>
+    <th>Make event private</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @create_events.each do |create_event| %>
+  <tr>
+    <td><%= create_event.user_id %></td>
+    <td><%= create_event.title %></td>
+    <td><%= create_event.from_date %></td>
+    <td><%= create_event.to_date %></td>
+    <td><%= create_event.body %></td>
+    <td><%= create_event.location %></td>
+    <td><%= create_event.country %></td>
+    <td><%= create_event.Make_event_private %></td>
+     <td><%= link_to 'Home', profiles_path %></td>
+    <td><%= link_to 'Show', create_event %></td>
+    <td><%= link_to 'Edit', edit_create_event_path(create_event) %></td>
+    <td><%= link_to 'Destroy', create_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Create event', new_create_event_path %>

@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131026043649) do
+ActiveRecord::Schema.define(:version => 20131026054406) do
+
+  create_table "create_events", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.date     "from_date"
+    t.date     "to_date"
+    t.text     "body"
+    t.string   "location"
+    t.string   "country"
+    t.boolean  "Make_event_private"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "create_resumes", :force => true do |t|
     t.integer  "user_id"

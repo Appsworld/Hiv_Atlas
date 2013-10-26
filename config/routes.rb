@@ -1,5 +1,8 @@
 HivAtlas::Application.routes.draw do
    
+  resources :create_events
+
+
   resources :create_resumes
 
 

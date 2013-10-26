@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Title:</b>
+  <%= @create_event.title %>
+</p>
+
+<p>
+  <b>From date:</b>
+  <%= @create_event.from_date %>
+</p>
+
+<p>
+  <b>To date:</b>
+  <%= @create_event.to_date %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @create_event.body %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @create_event.location %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @create_event.country %>
+</p>
+
+<p>
+  <b>Make event private:</b>
+  <%= @create_event.Make_event_private %>
+</p>
+
+
+<%= link_to 'Edit', edit_create_event_path(@create_event) %> |
+<%= link_to 'Back', create_events_path %>

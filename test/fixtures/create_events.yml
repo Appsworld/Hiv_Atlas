@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  title: MyString
+  from_date: 2013-10-26
+  to_date: 2013-10-26
+  body: MyText
+  location: MyString
+  country: MyString
+  Make_event_private: false
+
+two:
+  user_id: 1
+  title: MyString
+  from_date: 2013-10-26
+  to_date: 2013-10-26
+  body: MyText
+  location: MyString
+  country: MyString
+  Make_event_private: false
